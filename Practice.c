@@ -1,10 +1,5 @@
 #include<stdio.h>
 int main() {
-    float side;
-    float pi = 3.14;
-    printf("Enter the radius of teh circle : ");
-    scanf("%f", &side);
-
-    printf("The area of the squre is : %f", pi * side * side);
+    printf("%d",5*2-5*3);  
     return 0; 
 }
