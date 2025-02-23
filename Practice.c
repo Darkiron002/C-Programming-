@@ -1,9 +1,8 @@
 #include<stdio.h>
 int main() {
-    // If the number is even the it'll show 1 else 0
-    int num;
-    printf("Enter your numner :");
-    scanf("%d", &num);
-    printf("%d", num % 2 == 0 );
+    int a;
+    printf("Enter your number:");
+    scanf("%d", &a);
+    printf("%d", (a > 9) && (a<100));
     return 0; 
 }
