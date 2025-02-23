@@ -1,14 +1,11 @@
 #include<stdio.h>
 int main() {
-    int a;
-    int b;
-    int c;
-    printf("Enter your number:");
-    scanf("%d", &a);
-    printf("Enter your number:");
-    scanf("%d", &b);
-    printf("Enter your number:");
-    scanf("%d", &c);
-    printf("The avarage of the numbers is : %d", (a+b+c)/3);
-    return 0; 
+    int age;
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    if(age >= 18) {
+        printf("You are eligible to vote.");
+    } else {
+        printf("You are not eligible to vote.");
+    }
 }
