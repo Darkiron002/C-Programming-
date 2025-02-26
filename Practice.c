@@ -1,11 +1,25 @@
 #include<stdio.h>
 int main() {
-    int age;
-    printf("Enter your age: ");
-    scanf("%d", &age);
-    if(age >= 18) {
-        printf("You are eligible to vote.");
-    } else {
-        printf("You are not eligible to vote.");
-    }
+    int day; 
+printf("enter day(1-7): ");
+scanf("%d", &day);
+switch(day){
+	case 1: printf("monday \n");
+			break;
+	case 2: printf("tuesday \n");
+			break;
+	case 3: printf("wednesday \n");
+			break;
+	case 4: printf("thusday \n");
+			break;
+	case 5: printf("friday \n");
+			break;
+	case 6: printf("saturday \n");
+			break;
+	case 7: printf("sunday \n");
+			break;
+	default: printf("not valid \n");
+			break;
+	}
+    return 0;
 }
