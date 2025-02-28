@@ -1,12 +1,10 @@
 #include<stdio.h>
 int main () {
 	int n;
-	printf("Enter your Number: ");
+	printf("Enter your desired number: ");
 	scanf("%d", &n);
-	int sum = 0;
-	for(int i = 1; i <= n; i++) {
-		sum += i;
+	for(int i= 1; i<= 10; i++){
+		printf("%d\n", n*i);
 	}
-	printf("your sum of the numbers is %d \n", sum);
 	return 0;
 }	 
