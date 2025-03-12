@@ -1,16 +1,17 @@
 #include <stdio.h>
+
+void All_in_finction(int a, int b, int *sum , int *product, int *avag);
+
 int main() {
-	int *ptr;    //this is declearing that there are two veriables *ptr and x
-	int x;
-	ptr = &x;   //this means we are storing the address of x in the *ptr
-	*ptr = 0;   //this means we are storing 0 in the address of x
-	printf("x = %d\n", x);
-	printf("*ptr = %d\n", *ptr);
-	*ptr += 5 ;
-	printf("x = %d\n", x);
-	printf("*ptr = %d\n", *ptr);
-	(*ptr)++;
-	printf("x = %d\n", x);
-	printf("*ptr = %d\n", *ptr);
+	int a= 5, b= 10;
+	int sum, product, avag;
+	All_in_finction(a, b, &sum, &product, &avag);
+	printf("Sum: %d\nProduct: %d\nAvag: %d\n", sum, product, avag);
 	return 0;
+}
+
+void All_in_finction(int a, int b ,int *sum , int *product, int *avag) {
+	*sum = a + b;
+	*product = a * b;
+	*avag = (a + b) / 2;
 }
