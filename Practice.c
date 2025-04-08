@@ -1,23 +1,14 @@
 #include <stdio.h>
+#include <string.h>
 
-int counteven(int arr[],int n);
+struct students {
+    char name[100];
+    int roll;
+    float cgpa;
+};
 int main() {
-    //Program to count the number of even numbers in an array
-    
-    int arr[] = {1,2,3,4,5,6,7,8,9,10};
-    counteven(arr,10);
-    printf("%d",counteven(arr,10));
-    
-    
-    return 0;
-}
-int counteven(int arr[],int n) {
-    int count = 0;
-    for(int i = 0;i < n;i++) {
-        if(arr[i] % 2 == 0) {
-            count++;
-        }
-    }
+    struct students s1 = {"Chayan", 23, 7.2};
+    printf("name %s",s1.name);
 
-    return count; 
+    return 0;
 }
