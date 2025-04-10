@@ -1,14 +1,22 @@
 #include <stdio.h>
-#include <string.h>
 
-struct students {
-    char name[100];
-    int roll;
-    float cgpa;
-};
 int main() {
-    struct students s1 = {"Chayan", 23, 7.2};
-    printf("name %s",s1.name);
-
+    int matA[3][3];
+    int matB[3][3];
+    int matC[3][3];
+    int i, j;
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            printf("Enter element [%d][%d] of matrix A: ", i, j);
+            scanf("%d", &matA[i][j]);
+        }
+    }
+    printf("Matrix A:\n");
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            printf("%d ", matA[i][j]);
+        }
+        printf("\n");
+    }
     return 0;
 }
