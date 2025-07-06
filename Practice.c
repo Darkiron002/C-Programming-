@@ -1,10 +1,8 @@
-#include <stdio.h>
-int function(int n );
-int main() {
-    function(4);
+# include<stdio.h>
+int main (){
+    for(int i=0; i <=3; i++) {
+        printf("Hello world (%d) !\n",i);
+    }
     return 0;
-}
-int function(int n ) {
-    printf("%d\n",n); 
-    printf("this is me");
+
 }
