@@ -1,30 +1,31 @@
-#include <stdio.h>
-#include <ctype.h>
+#include<stdio.h>
+#include<stdlib.h>
+
+void selectionSordt(int arr[],int n){
+    for(int i=0; i<n;i++){
+        int min = i;
+        for(int j = i+1; j<n;j++){
+            if(arr[j]<arr[min]){
+                min = j;
+            }
+        }
+        int temp;
+        temp = arr[i];
+        arr[i]= arr[min];
+        arr[min]= temp;
+    }
+
+}
+void printarr(int arr[],int n){
+    for(int i = 0; i<n;i++){
+        printf("%d ",arr[i]);
+    }
+}
 
 int main(){
-
-    float average, averageo;
-    int even = 0;
-    int odd = 0;
-    int avg_e=0;
-    int avg_o=0;
-    int n = 0;
-    while(n!= 0){
-        scanf("%d",&n);
-        if(n %2 ==0){
-            even++;
-            avg_e = avg_e + n;
-        }
-        else if (n %2 !=0){
-            odd++;
-            avg_o = avg_o +n;        }
-    }
-    average = avg_e/even;
-    averageo = avg_o/ odd;
-    printf("%d \n",even);
-    printf("%d \n",odd);
-    printf("%f \n",average);
-    printf("%f \n",averageo);
+    int arr[5]= {3,6,1,9,12};
+    selectionSordt(arr,5);
+    printarr(arr,5);
 
     return 0;
 }
